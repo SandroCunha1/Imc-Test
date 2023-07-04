@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-image: linear-gradient(180deg,
+            hsl(240deg 100% 86%) 0%,
+            hsl(253deg 87% 85%) 11%,
+            hsl(266deg 75% 83%) 22%,
+            hsl(279deg 63% 81%) 33%,
+            hsl(294deg 53% 80%) 44%,
+            hsl(308deg 55% 79%) 56%,
+            hsl(319deg 64% 80%) 67%,
+            hsl(328deg 71% 81%) 78%,
+            hsl(335deg 77% 82%) 89%,
+            hsl(342deg 80% 82%) 100%);
+
+}
+.container{
+    width: 25%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgba(100, 97, 97, 0.479);
+}
+
+.form legend {
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.form [type=text], [type=number]{
+    height: 40px;
+    border-radius: 20px;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+
+.form .btn-submit {
+    margin-top: 10px;
+    width: 50%;
+    align-self: center;
+    border-radius: 20px;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form .btn-submit:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
