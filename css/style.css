@@ -2,29 +2,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+html,
+body{
+    min-height: 100%;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
 }
 
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-    background-image: linear-gradient(180deg,
-            hsl(240deg 100% 86%) 0%,
-            hsl(253deg 87% 85%) 11%,
-            hsl(266deg 75% 83%) 22%,
-            hsl(279deg 63% 81%) 33%,
-            hsl(294deg 53% 80%) 44%,
-            hsl(308deg 55% 79%) 56%,
-            hsl(319deg 64% 80%) 67%,
-            hsl(328deg 71% 81%) 78%,
-            hsl(335deg 77% 82%) 89%,
-            hsl(342deg 80% 82%) 100%);
-
+    align-items: center;   
+    min-height: 100%;
 }
 .container{
     width: 25%;
+    margin-top: 10%;
 }
 .form {
     display: flex;
@@ -35,6 +32,7 @@
     padding: 25px;
     border-radius: 20px;
     background-color: rgba(100, 97, 97, 0.479);
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.479);
 }
 
 .form legend {
@@ -50,6 +48,12 @@
     border-radius: 20px;
     padding: 4px;
     padding-left: 10px;
+    border: 0px ;
+}
+
+.form .radio-group{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -66,4 +70,23 @@
 .form .btn-submit:hover {
     transform: scale(1.1);
     transition: 0.2s;
+}
+
+.table{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #0000001c;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.479);
+}
+
+.table tr{
+    text-align: center;
+    
+}
+
+.table th{
+    width: 33%;
 }
